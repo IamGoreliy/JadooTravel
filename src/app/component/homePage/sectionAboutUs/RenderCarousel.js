@@ -40,14 +40,18 @@ export const RenderCarousel = () => {
 
     return (
         <Box
-            id={'containerCarouselOut'}
             sx={{
+                display: 'flex',
+                alignItems: 'end',
                 width: '100%',
                 overflow: 'hidden',
-                mt: '209px',
+                // mt: '209px',
+                height: '720px',
+
             }}
         >
             <CustomList
+                id={'containerCarouselOut'}
                 sx={{
                     position: 'relative',
                     display: 'flex',
@@ -56,6 +60,7 @@ export const RenderCarousel = () => {
                     columnGap: '20px',
                 }}
             >
+
                 {initialState.map((ele, index) => {
                     return (
                         <Box
